@@ -9,6 +9,8 @@ set tabstop=4
 set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
+"set noet (switch from spaces to TAB) or set noexpandtab
+"set et (to switch back)
 "match brackets
 set matchpairs+=<:>
 

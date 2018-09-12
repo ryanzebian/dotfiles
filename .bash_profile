@@ -20,3 +20,10 @@ set -o vi #enables vi in terminal
 # or  brew cask install gpg-suite
 #export GPG_TTY=$(tty) 
 
+#ADDING PSQL
+export PATH="${PATH}:/Applications/Postgres.app/Contents/Versions/10/bin/"
+
+#add config to sync configurations with git
+alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+config config status.showUntrackedFiles no
+
