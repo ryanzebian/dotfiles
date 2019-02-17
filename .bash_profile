@@ -35,3 +35,6 @@ PATH="${PATH}:/Applications/Postgres.app/Contents/Versions/10/bin/"
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
 
+#allow for reverse search forward to work
+stty -ixon
+
