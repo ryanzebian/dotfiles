@@ -10,7 +10,8 @@ config config status.showUntrackedFiles no
 ```
 download config files:
 ```
-git clone --separate-git-dir=~/.myconf https://github.com/ryanzebian/dotfiles ~
+/usr/bin/git clone --bare https://github.com/ryanzebian/dotfiles $HOME/.myconf 
+/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME checkout 
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 ```
 

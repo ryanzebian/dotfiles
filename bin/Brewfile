@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+cask "amethyst"
+cask "firefox"
+cask "font-fira-code"
+cask "visual-studio-code"
