@@ -1,4 +1,5 @@
 SHELL := bash
+config := /usr/bin/git --git-dir=${HOME}/.myconf/ --work-tree=${HOME}
 
 .PHONY: all
 all: brew brewapps ## Installs all deps
@@ -15,6 +16,13 @@ brew: ## Install homebrew
 brewapps: ## Installs brew bundle
 	brew bundle --file Brewfile
 	defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
+
+.PHONY: save
+save: ## save brew bundle
+	brew bundle dump --file Brewfile --force
+	$(config) add Brewfile
+	$(config) commit -m 'add package'
+	$(config) push origin master
 
 .PHONY: help
 help:
