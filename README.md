@@ -5,14 +5,14 @@ note use config as alias for git
 setup git repo from scratch: 
 ```
 git init --bare $HOME/.myconf
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
 ```
 download config files:
 ```
-/usr/bin/git clone --bare https://github.com/ryanzebian/dotfiles $HOME/.myconf 
-/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME checkout 
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+git clone --bare https://github.com/ryanzebian/dotfiles $HOME/.myconf 
+git --git-dir=$HOME/.myconf/ --work-tree=$HOME checkout 
+alias config='git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 ```
 
 
