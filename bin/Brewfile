@@ -7,7 +7,6 @@ brew "awscli"
 brew "go"
 brew "jq"
 brew "mono", link: false
-brew "poetry"
 brew "terraform"
 brew "tmux"
 brew "aws/tap/aws-sam-cli"
