@@ -13,3 +13,5 @@ zstyle ':completion:*' expand prefix suffix
 
 # setupup completion http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Completion-System
 autoload -Uz compinit && compinit
+
+export AWS_DEFAULT_PROFILE=personal
