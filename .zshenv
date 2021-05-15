@@ -15,3 +15,7 @@ zstyle ':completion:*' expand prefix suffix
 autoload -Uz compinit && compinit
 
 export AWS_DEFAULT_PROFILE=personal
+#Issue with GPG using Git, must assign environment variable
+#https://stackoverflow.com/questions/39494631/gpg-failed-to-sign-the-data-fatal-failed-to-write-commit-object-git-2-10-0
+# or  brew cask install gpg-suite
+export GPG_TTY=$(tty) 

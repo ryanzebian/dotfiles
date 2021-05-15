@@ -14,7 +14,7 @@ brew: ## Install homebrew
 
 .PHONY: brewapps
 brewapps: ## Installs brew bundle
-	brew bundle --file Brewfile
+	brew bundle --file Brewfile --verbose
 	defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
 
 .PHONY: save
