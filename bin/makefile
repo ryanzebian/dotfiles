@@ -3,7 +3,7 @@ config := /usr/bin/git --git-dir=${HOME}/.myconf/ --work-tree=${HOME}
 
 .PHONY: all
 all: brew brewapps ## Installs all deps
-
+	bash setupDock.sh
 .PHONY: brew
 brew: ## Install homebrew
 	@if [ ! -f /usr/local/bin/brew ]; then \
