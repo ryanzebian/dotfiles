@@ -38,3 +38,4 @@ config config status.showUntrackedFiles no
 #allow for reverse search forward to work
 stty -ixon
 
+export PATH="/usr/local/opt/libpq/bin:$PATH"

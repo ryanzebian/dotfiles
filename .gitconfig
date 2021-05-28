@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = Ryan Zebian
-email = zebian93@gmail.com
+	name = Ryan Zebian
+	email = zebian93@gmail.com
 	signingkey = 3D62ED27402F684D
 [commit]
 	gpgsign = true
