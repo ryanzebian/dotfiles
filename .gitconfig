@@ -3,6 +3,6 @@
 # Please adapt and uncomment the following lines:
 	name = Ryan Zebian
 	email = zebian93@gmail.com
-	signingkey = 3D62ED27402F684D
+	signingkey = 095D6D63B2D5D9FD5ECD4A263D62ED27402F684D
 [commit]
 	gpgsign = true
